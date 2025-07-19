@@ -1,31 +1,13 @@
 {
-    "version": 2,
-    "builds": [
-      {
+    "builds": [{
         "src": "truckersmp_mods/wsgi.py",
         "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.13.5",
-          "excludeFiles": ["venv/**", "boto3/**"]
-        }
-      },
-      {
-        "src": "build.sh",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "staticfiles_build"
-        }
-      }
-    ],
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }],
     "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "truckersmp_mods/wsgi.py"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "truckersmp_mods/wsgi.py"
+        }
     ]
-  }
+}

@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include("debug_toolbar.urls")),
     path('i18n/', include('django.conf.urls.i18n')),
-    path('tmp-mods-site-vercel.vercel.app/', main, name='main'),
+    path('', main, name='main'),
 ]
 
 urlpatterns += i18n_patterns(

@@ -1,0 +1,392 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 21:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\main\all_mods.html:5 .\templates\main\base.html:67
+msgid "Все моды"
+msgstr "Все моды"
+
+#: .\templates\main\all_mods.html:45 .\templates\main\all_news.html:46
+msgid "Фильтры"
+msgstr "Фильтры"
+
+#: .\templates\main\all_mods.html:48 .\templates\main\all_news.html:49
+msgid "Поиск"
+msgstr "Поиск"
+
+#: .\templates\main\all_mods.html:49 .\templates\main\all_news.html:50
+msgid "Введите запрос..."
+msgstr "Введите запрос..."
+
+#: .\templates\main\all_mods.html:52 .\templates\main\all_news.html:53
+msgid "Сортировать по"
+msgstr "Сортировать по"
+
+#: .\templates\main\all_mods.html:54 .\templates\main\all_news.html:55
+#, fuzzy
+#| msgid "Новости"
+msgid "Популярности"
+msgstr "Популярности"
+
+#: .\templates\main\all_mods.html:55 .\templates\main\all_news.html:56
+msgid "Дате создания"
+msgstr "Дате создания"
+
+#: .\templates\main\all_mods.html:59
+msgid "Категория"
+msgstr "Категория"
+
+#: .\templates\main\all_mods.html:61
+msgid "Все категории"
+msgstr "Все категории"
+
+#: .\templates\main\all_mods.html:62
+msgid "Улучшенный геймплей"
+msgstr "Улучшенный геймплей"
+
+#: .\templates\main\all_mods.html:63
+msgid "Световые приборы"
+msgstr "Световые приборы"
+
+#: .\templates\main\all_mods.html:66 .\templates\main\all_news.html:59
+msgid "Применить"
+msgstr "Применить"
+
+#: .\templates\main\all_mods.html:68 .\templates\main\all_news.html:61
+msgid "Сбросить фильтры"
+msgstr "Сбросить фильтры"
+
+#: .\templates\main\all_news.html:5 .\templates\main\base.html:68
+msgid "Новости"
+msgstr "Новости"
+
+#: .\templates\main\base.html:32 .\templates\main\base.html:43
+msgid "ГЛАВНАЯ"
+msgstr "ГЛАВНАЯ"
+
+#: .\templates\main\base.html:33 .\templates\main\base.html:44
+msgid "ВСЕ МОДЫ"
+msgstr "ВСЕ МОДЫ"
+
+#: .\templates\main\base.html:34 .\templates\main\base.html:45
+msgid "НОВОСТИ"
+msgstr "НОВОСТИ"
+
+#: .\templates\main\base.html:35 .\templates\main\base.html:46
+msgid "ПЕРЕВОД"
+msgstr "ENG"
+
+#: .\templates\main\base.html:59
+msgid ""
+"Надоело что админы могут следить за тобой, а ты за ними нет? Пора менять "
+"правила!"
+msgstr ""
+"Надоело что админы могут следить за тобой, а ты за ними нет? Пора менять "
+"правила!"
+
+#: .\templates\main\base.html:64
+msgid "Навигация"
+msgstr "Навигация"
+
+#: .\templates\main\base.html:66
+msgid "Главная"
+msgstr "Главная"
+
+#: .\templates\main\base.html:75
+msgid "Соцсети"
+msgstr "Соцсети"
+
+#: .\templates\main\base.html:92
+msgid "Company. Все права защищены"
+msgstr "Оформление сайта. домен, 2025"
+
+#: .\templates\main\main.html:6
+msgid "main title"
+msgstr "Главная"
+
+#: .\templates\main\main.html:21
+msgid "Admin Radar"
+msgstr "Admin Radar"
+
+#: .\templates\main\main.html:30
+msgid "Оповещает о появление админа"
+msgstr "Оповещает о появление админа"
+
+#: .\templates\main\main.html:31
+msgid "Сообщение и звуковой сигнал"
+msgstr "Сообщение и звуковой сигнал"
+
+#: .\templates\main\main.html:43
+msgid "Отключает урон трака"
+msgstr "Отключает урон трака"
+
+#: .\templates\main\main.html:44
+#, fuzzy
+#| msgid "+ можно включить бесконечное топливо или зарядку"
+msgid "+ можно включить бесконечное топливо"
+msgstr "+ можно включить бесконечное топливо или зарядку"
+
+#: .\templates\main\main.html:56
+msgid "Скрывает реальную скорость"
+msgstr "Скрывает реальную скорость"
+
+#: .\templates\main\main.html:57
+msgid "На спидометре 110, по факту 130"
+msgstr "На спидометре 110, по факту 130"
+
+#: .\templates\main\main.html:66
+msgid "Trainer"
+msgstr "Trainer"
+
+#: .\templates\main\main.html:76
+msgid "Не является читом"
+msgstr "Не является читом"
+
+#: .\templates\main\main.html:77
+msgid "Анализирует файлы игры, не изменяя их"
+msgstr "Анализирует файлы игры, не изменяя их"
+
+#: .\templates\main\main.html:89
+#, python-format
+msgid "100%% невидим для ETS2MP"
+msgstr "100%% невидим для ETS2MP"
+
+#: .\templates\main\main.html:90
+msgid "В тракерсМП нет античита"
+msgstr "В тракерсМП нет античита"
+
+#: .\templates\main\main.html:102
+msgid "Оптимизирован под рули"
+msgstr "Оптимизирован под рули"
+
+#: .\templates\main\main.html:103
+msgid "Кнопки не только на клавиатуре"
+msgstr "Кнопки не только на клавиатуре"
+
+#: .\templates\main\main.html:111
+msgid "Узнать больше"
+msgstr "Узнать больше"
+
+#: .\templates\main\main.html:124
+msgid "Тарифы"
+msgstr "Тарифы"
+
+#: .\templates\main\main.html:131
+msgid "Базовый"
+msgstr "Базовый"
+
+#: .\templates\main\main.html:135 .\templates\main\main.html:156
+msgid "Радар"
+msgstr "Радар"
+
+#: .\templates\main\main.html:138 .\templates\main\main.html:157
+msgid "No damage"
+msgstr "No damage"
+
+#: .\templates\main\main.html:142 .\templates\main\main.html:162
+msgid "Подробнее"
+msgstr "Подробнее"
+
+#: .\templates\main\main.html:143
+msgid "Скачать"
+msgstr "Скачать"
+
+#: .\templates\main\main.html:152
+msgid "SALE"
+msgstr "SALE"
+
+#: .\templates\main\main.html:153
+msgid "Pro"
+msgstr "Pro"
+
+#: .\templates\main\main.html:158
+msgid "Обход 110км/ч"
+msgstr "Обход 110км/ч"
+
+#: .\templates\main\main.html:159
+msgid "Стробоскопы"
+msgstr "Стробоскопы"
+
+#: .\templates\main\main.html:163
+msgid "Купить"
+msgstr "Купить"
+
+#: .\templates\main\main.html:179
+msgid "ИСТОРИЯ ПРОЕКТА"
+msgstr "ИСТОРИЯ ПРОЕКТА"
+
+#: .\templates\main\main.html:184
+msgid ""
+"Один раз, вспомнив про то как в 2000-ых в России были популярны такие радары-"
+"детекторы камер, в голову пришла идея, как такой же радар можно создать для "
+"тракерсМП."
+msgstr ""
+"Один раз, вспомнив про то как в 2000-ых в России были популярны такие радары-"
+"детекторы камер, в голову пришла идея, как такой же радар можно создать для "
+"тракерсМП."
+
+#: .\templates\main\main.html:186
+msgid "радар-детектор"
+msgstr "радар-детектор"
+
+#: .\templates\main\main.html:188
+msgid ""
+"Кто не знает, это прибор, который в реальном времени ищет камеры, "
+"установленные на дороге, и предостерегает водителя от получения "
+"потенцеального штрафа."
+msgstr ""
+"Кто не знает, это прибор, который в реальном времени ищет камеры, "
+"установленные на дороге, и предостерегает водителя от получения "
+"потенцеального штрафа."
+
+#: .\templates\main\main.html:191
+msgid ""
+"За пару дней набросал код, чтобы протестировать идею. И чудо, оно заработало "
+"- надо продолжать! Созвонились с другом, с которым катаемся в truckersMP - "
+"ему понравилось. Он присоединился к разработке. Таким образом командой из 2 "
+"человек, на протяжение 2 недель мы писали новый функционал и тестировали его "
+"в игре."
+msgstr ""
+"За пару дней набросал код, чтобы протестировать идею. И чудо, оно заработало "
+"- надо продолжать! Созвонились с другом, с которым катаемся в truckersMP - "
+"ему понравилось. Он присоединился к разработке. Таким образом командой из 2 "
+"человек, на протяжение 2 недель мы писали новый функционал и тестировали его "
+"в игре."
+
+#: .\templates\main\main.html:194
+msgid "Выложили рекламный"
+msgstr "Выложили рекламный"
+
+#: .\templates\main\main.html:194
+msgid "ролик"
+msgstr "ролик"
+
+#: .\templates\main\main.html:194
+msgid ""
+"на YouTube. Но он собрал мало просмотров. Поэтому уже командой из 3 человек "
+"начали разрабатывать этот сайт для продвижения."
+msgstr ""
+"на YouTube. Но он собрал мало просмотров. Поэтому уже командой из 3 человек "
+"начали разрабатывать этот сайт для продвижения."
+
+#: .\templates\main\main.html:197
+msgid "Подробно узнать как он работает вы можете в"
+msgstr "Подробно узнать как он работает вы можете в"
+
+#: .\templates\main\main.html:197
+msgid "блоге"
+msgstr "блоге"
+
+#: .\templates\main\main.html:200
+msgid ""
+"Разрабатывать мод для любимой игры - это настоящее удовольствие! Очень "
+"хочется поделиться им с другими игроками, Но так как обслуживать сайт и "
+"размещать его на сервере дорого, просим вас поддержать нас исключительно "
+"символической суммой. Так вы внесете свой вклад в развитие проекта."
+msgstr ""
+"Разрабатывать мод для любимой игры - это настоящее удовольствие! Очень "
+"хочется поделиться им с другими игроками, Но так как обслуживать сайт и "
+"размещать его на сервере дорого, просим вас поддержать нас исключительно "
+"символической суммой. Так вы внесете свой вклад в развитие проекта."
+
+#: .\templates\main\main.html:211
+msgid "Добавить комментарий"
+msgstr "Добавить комментарий"
+
+#: .\templates\main\main.html:215
+msgid "Имя"
+msgstr "Имя"
+
+#: .\templates\main\main.html:221
+msgid "Комментарий"
+msgstr "Комментарий"
+
+#: .\templates\main\main.html:225
+msgid "Опубликовать"
+msgstr "Опубликовать"
+
+#: .\templates\main\main.html:254
+msgid "Наша команда"
+msgstr "Наша команда"
+
+#: .\templates\main\main.html:265
+msgid "Грачев Илья"
+msgstr "Грачев Илья"
+
+#: .\templates\main\main.html:270
+msgid "Админ / Разработчик"
+msgstr "Админ / Разработчик"
+
+#: .\templates\main\main.html:271
+msgid "Возглавляет команду разработчиков. Пишет скрипт для сайта и программы"
+msgstr "Возглавляет команду разработчиков. Пишет скрипт для сайта и программы"
+
+#: .\templates\main\main.html:282
+msgid "Федор Сапронов"
+msgstr "Федор Сапронов"
+
+#: .\templates\main\main.html:287
+msgid "Стиль сайта"
+msgstr "Стиль сайта"
+
+#: .\templates\main\main.html:288
+msgid "Написал код для главной страницы сайта"
+msgstr "Написал код для главной страницы сайта"
+
+#: .\templates\main\main.html:299
+msgid "Алексей Цуканов"
+msgstr "Алексей Цуканов"
+
+#: .\templates\main\main.html:304
+msgid "Продукт / Пиар Менеджер"
+msgstr "Продукт / Пиар Менеджер"
+
+#: .\templates\main\main.html:305
+msgid "Занимается продвижением. Работает в поддержке."
+msgstr "Занимается продвижением. Работает в поддержке."
+
+#: .\templates\main\main.html:316
+msgid "Виктория Аксенова"
+msgstr "Виктория Аксенова"
+
+#: .\templates\main\main.html:321
+msgid "Дизайнер"
+msgstr "Дизайнер"
+
+#: .\templates\main\main.html:322
+msgid "Нарисовала шаблон, задала стиль сайта."
+msgstr "Нарисовала шаблон, задала стиль сайта."
+
+#, fuzzy
+#~| msgid "Развернуть"
+#~ msgid "развернуть"
+#~ msgstr "Развернуть"
+
+#, fuzzy
+#~| msgid "Свернуть"
+#~ msgid "свернуть"
+#~ msgstr "Свернуть"
+
+#~ msgid "Свернуть"
+#~ msgstr "Свернуть"
+
+#~ msgid "Развернуть"
+#~ msgstr "Развернуть"

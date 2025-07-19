@@ -1,0 +1,21 @@
+<div class="circle-pagination">
+    {% if page_obj.has_previous %}
+        <a class="circle-pagination__item" href="?page={{ page_obj.previous_page_number }}">&lt;</a>
+    {% else %}
+        <span class="circle-pagination__item circle-pagination__item--disabled">&lt;</span>
+    {% endif %}
+
+    {% for page in page_obj.paginator.page_range %}
+        {% if page == page_obj.number %}
+            <span class="circle-pagination__item circle-pagination__item--active">{{ page }}</span>
+        {% else %}
+            <a class="circle-pagination__item" href="?page={{ page }}">{{ page }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+        <a class="circle-pagination__item" href="?page={{ page_obj.next_page_number }}">&gt;</a>
+    {% else %}
+        <span class="circle-pagination__item circle-pagination__item--disabled">&gt;</span>
+    {% endif %}
+</div>

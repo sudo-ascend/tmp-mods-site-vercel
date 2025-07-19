@@ -1,0 +1,314 @@
+{% extends "main/base.html" %}
+{% load i18n %}
+{% load static %}
+
+
+{% block title %}{% trans "main title" %}{% endblock %}
+{% block stylesheet %}
+<link type="text/css" href="{% static 'main/css/main.css' %}" rel="stylesheet" />
+<link type="text/css" href="{% static 'main/css/base.css' %}" rel="stylesheet" />
+<link type="text/css" href="{% static 'main/css/about.css' %}" rel="stylesheet" />
+<link type="text/css" href="{% static 'main/css/paginator.css' %}" rel="stylesheet" />
+{% endblock %}
+{% block content %}
+{% load i18n static %}
+<section class="project-section with-bg-image">
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-5 fw-bold mb-4" style="text-align: left;">{% trans "Admin Radar" %}</h1>
+                    <div class="row g-4 justify-content-center">
+                        <!-- Карточка 1 -->
+                        <div class="col-md-4">
+                            <div class="advantage d-flex align-items-start p-3 rounded-3 card-feature advantage-card">
+                                <img src="{% static 'main/images/check-mark.ico' %}" width="24" height="24" class="me-3">
+                                <div>
+                                    <h4>{% trans "Не является читом" %}</h4>
+                                    <p style="color:#b2b2b2;">{% trans "Анализирует файлы игры, не изменяя их" %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Карточка 2 -->
+                        <div class="col-md-4">
+                            <div class="advantage d-flex align-items-start p-3 rounded-3 card-feature advantage-card">
+                                <img src="{% static 'main/images/check-mark.ico' %}" width="24" height="24" class="me-3">
+                                <div>
+                                    <h4>{% trans "Оповещает о появление админа" %}</h4>
+                                    <p style="color:#b2b2b2;">{% trans "Сообщение и звуковой сигнал" %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Карточка 3 -->
+                        <div class="col-md-4">
+                            <div class="advantage d-flex align-items-start p-3 rounded-3 card-feature advantage-card">
+                                <img src="{% static 'main/images/check-mark.ico' %}" width="24" height="24" class="me-3">
+                                <div>
+                                    <h4>{% trans "100% невидим для ETS2MP" %}</h4>
+                                    <p style="color:#b2b2b2;">{% trans "В тракерсМП нет античита" %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-10">
+                    <h1 class="display-5 fw-bold mb-4" style="text-align: left;">{% trans "Trainer" %}</h1>
+                    <div class="row g-4 justify-content-center">
+                        <!-- Карточка 4 -->
+                        <div class="col-md-4">
+                            <div class="advantage d-flex align-items-start p-3 rounded-3 card-feature advantage-card">
+                                <img src="{% static 'main/images/check-mark.ico' %}" width="24" height="24" class="me-3">
+                                <div>
+                                    <h4>{% trans "Отключает урон трака" %}</h4>
+                                    <p style="color:#b2b2b2;">{% trans "+ можно включить бесконечное топливо" %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Карточка 5 -->
+                        <div class="col-md-4">
+                            <div class="advantage d-flex align-items-start p-3 rounded-3 card-feature advantage-card">
+                                <img src="{% static 'main/images/check-mark.ico' %}" width="24" height="24" class="me-3">
+                                <div>
+                                    <h4>{% trans "Скрывает реальную скорость" %}</h4>
+                                    <p style="color:#b2b2b2;">{% trans "На спидометре 110, по факту 130" %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Карточка 6 -->
+                        <div class="col-md-4">
+                            <div class="advantage d-flex align-items-start p-3 rounded-3 card-feature advantage-card">
+                                <img src="{% static 'main/images/check-mark.ico' %}" width="24" height="24" class="me-3">
+                                <div>
+                                    <h4>{% trans "Оптимизирован под рули" %}</h4>
+                                    <p style="color:#b2b2b2;">{% trans "Кнопки не только на клавиатуре" %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <a href="/ru/news/" class="hover-btn-animation more-btn" style="text-decoration: none">{% trans "Узнать больше" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background: linear-gradient(black, 50%, var(--accent-blue))">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="text-center text-white fw-bold">{% trans "Тарифы" %}</h2><br>
+
+                <div class="tariff-plans">
+                    <div class="tariff-card-combined">
+                        <div class="tariff-header" style="background-image: linear-gradient(to bottom, transparent, 65%, black), url('https://a.d-cd.net/7828f6s-1920.jpg');
+                                                          background-size: cover;
+                                                          background-position: center;">
+                            <h2>{% trans "Базовый" %}</h2>
+                        </div>
+                        <div class="tariff-body">
+                            <div>
+                                <p class="text-secondary" style="display:inline;">{% trans "Радар" %}</p>
+                            </div>
+                            <div>
+                                <p class="text-secondary" style="display:inline;">{% trans "No damage" %}</p>
+                            </div>
+                            <p class="price" style="margin-top:102px">350 ₽</p>
+                            <div class="card-actions">
+                                <a href="/ru/news/" class="btn btn-outline">{% trans "Подробнее" %}</a>
+                                <a href="https://funpay.com/users/15635673/" class="btn btn-primary funpay"><img src="{% static 'main/images/funpay.png' %}" height="25"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tariff-card-combined">
+                        <div class="tariff-header" style="background-image: linear-gradient(to bottom, transparent, 65%, black), url('https://a.d-cd.net/roAAAgP9QOA-1920.jpg');
+                                                          background-size: cover;
+                                                          background-position: center;">
+                            <span class="sale-label">{% trans "SALE" %}</span>
+                            <h2>{% trans "Pro" %}</h2>
+                        </div>
+                        <div class="tariff-body">
+                            <p class="text-secondary">{% trans "Радар" %}</p>
+                            <p class="text-secondary">{% trans "No damage" %}</p>
+                            <p class="text-secondary">{% trans "Обход 110км/ч" %}</p>
+                            <p class="text-secondary">{% trans "Стробоскопы" %}</p>
+                            <p class="price">650 ₽</p>
+                            <div class="card-actions">
+                                <a href="/ru/news/" class="btn btn-outline">{% trans "Подробнее" %}</a>
+                                <a href="https://funpay.com/users/15635673/" class="btn btn-primary funpay"><img src="{% static 'main/images/funpay.png' %}" height="25"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section style="background: linear-gradient(#60779f, 94%, var(--accent-blue))">
+    <div class="container" style="background-color: var(--card-bg); padding: 25px; border-radius: 8px; margin-bottom: 40px; box-shadow: var(--shadow-dark); max-width: 850px; margin: 0 auto; padding: 30px 0;">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-xl-10 col-10 text-center">
+                <div class="history-header">
+                    <h1>{% trans "ИСТОРИЯ ПРОЕКТА" %}</h1>
+                    <button id="toggle-history" class="btn btn-outline toggle-history-btn">read</button>
+                </div>
+                <div id="history-content">
+                    <p class="hero-text" style="text-align: left;">
+                        {% trans "Один раз, вспомнив про то как в 2000-ых в России были популярны такие радары-детекторы камер, в голову пришла идея, как такой же радар можно создать для тракерсМП." %}
+                    </p>
+                <img src="{% static 'main/images/Admin Radar.jpg' %}" alt="{% trans "радар-детектор" %}" style="width:70%;" class="justify-content-center">
+                <p class="hero-text" style="text-align: left;">
+                    {% trans "Кто не знает, это прибор, который в реальном времени ищет камеры, установленные на дороге, и предостерегает водителя от получения потенцеального штрафа." %}
+                </p>
+                <p class="hero-text" style="text-align: left;">
+                    {% trans "За пару дней набросал код, чтобы протестировать идею. И чудо, оно заработало - надо продолжать! Созвонились с другом, с которым катаемся в truckersMP - ему понравилось. Он присоединился к разработке. Таким образом командой из 2 человек, на протяжение 2 недель мы писали новый функционал и тестировали его в игре." %}
+                </p>
+                <p class="hero-text" style="text-align: left;">
+                    {% trans "Выложили рекламный" %} <a href="https://youtu.be/8ToF3vsFBD0?si=cB6re5aqVqbBQSGV">{% trans "ролик" %}</a> {% trans "на YouTube. Но он собрал мало просмотров. Поэтому уже командой из 3 человек начали разрабатывать этот сайт для продвижения." %}
+                </p>
+                <p class="hero-text" style="text-align: left;">
+                    {% trans "Подробно узнать как он работает вы можете в" %} <a href="/ru/news/">{% trans "блоге" %}</a>
+                </p>
+                <p class="hero-text" style="text-align: left;">
+                    {% trans "Разрабатывать мод для любимой игры - это настоящее удовольствие! Очень хочется поделиться им с другими игроками, Но так как обслуживать сайт и размещать его на сервере дорого, просим вас поддержать нас исключительно символической суммой. Так вы внесете свой вклад в развитие проекта." %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color: var(--accent-blue)">
+<div style="max-width: 850px; margin: 0 auto; padding: 30px 0;">
+    <!-- Форма добавления комментария -->
+    <form method="GET" class="comment-form" style="background-color: var(--card-bg); padding: 25px; border-radius: 8px; margin-bottom: 40px; box-shadow: var(--shadow-dark);">
+        <h3 style="color: var(--text-main); margin-top: 0; margin-bottom: 20px;">{% trans "Добавить комментарий" %}</h3>
+
+        <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+            <div style="flex: 1;">
+                <label for="input-user-name" style="display: block; color: var(--text-secondary); margin-bottom: 8px; font-size: 14px;">{% trans "Имя" %}</label>
+                <input id="input-user-name" type="text" name="name" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid var(--border-dark); background-color: var(--bg-dark); color: var(--text-main);">
+            </div>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="input-coment-text" style="display: block; color: var(--text-secondary); margin-bottom: 8px; font-size: 14px;">{% trans "Комментарий" %}</label>
+            <textarea id="input-coment-text" name="comment" style="width: 100%; min-height: 100px; padding: 10px; border-radius: 4px; border: 1px solid var(--border-dark); background-color: var(--bg-dark); color: var(--text-main); resize: vertical;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="padding: 10px 25px; font-size: 16px;">{% trans "Опубликовать" %}</button>
+    </form>
+
+    <!-- Список комментариев -->
+    <div class="comments-list" id="comments-container">
+        {% for comment in page_obj %}
+        <div class="comment-item" style="background-color: var(--card-bg); padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: var(--shadow-dark); position: relative; max-height:130px">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <img class="github-icon" src="{% static 'main/images/Anonimous.jpeg' %}" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+                <div>
+                    <p style="margin: 0; color: var(--text-main); font-weight: bold; font-size: 16px;">{{ comment.name }}</p>
+                </div>
+            </div>
+            <p style="color: var(--text-main); margin: 0 0 30px 0; line-height: 1.5; white-space: pre-wrap;">{{ comment.content }}</p>
+            <p style="position: absolute; bottom: 10px; right: 15px; margin: 0; color: var(--text-secondary); font-size: 12px;">
+                {{ comment.time_create|date:"d M Y H:i" }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+    {% include 'main/paginator.html' %}
+</div>
+</section>
+
+
+<section class="team-section" style="background-color: var(--accent-blue); padding: 50px 0;">
+    <div class="container" style="max-width: 1000px; margin: 0 auto;">
+        <!-- Карточка с заголовком секции -->
+        <div class="card" style="background-color: var(--card-bg); padding: 25px; border-radius: 8px; margin-bottom: 30px; box-shadow: var(--shadow-dark);">
+            <h2 style="color: var(--text-main); margin: 0; text-align: center;">{% trans "Наша команда" %}</h2>
+        </div>
+
+        <!-- Карточки участников команды -->
+        <div class="team-members-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 20px; margin-bottom: 30px;">
+            <!-- Грачев Илья -->
+            <div class="card team-member-card" style="background-color: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: var(--shadow-dark);">
+                <div style="display: flex; gap: 20px;">
+                    <img src="{% static 'main/images/Ilya.jpg' %}" alt="Грачев Илья" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-blue);">
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="color: var(--text-main); margin: 0;">{% trans "Грачев Илья" %}</h3>
+                            <a href="https://github.com/sudo-ascend" style="color: var(--text-main);">
+                                <img src="{% static 'main/images/github.ico' %}" alt="GitHub" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                        <h6 style="color: var(--accent-blue); margin: 0 0 10px 0; font-size: 14px;">{% trans "Админ / Разработчик" %}</h6>
+                        <p style="color: var(--text-main); margin: 0; line-height: 1.5;">{% trans "Возглавляет команду разработчиков. Пишет скрипт для сайта и программы" %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Федор Сапронов -->
+            <div class="card team-member-card" style="background-color: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: var(--shadow-dark);">
+                <div style="display: flex; gap: 20px;">
+                    <img src="{% static 'main/images/Fedor.jpg' %}" alt="Федор Сапронов" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-blue);">
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="color: var(--text-main); margin: 0;">{% trans "Федор Сапронов" %}</h3>
+                            <a href="https://github.com/Fred640" style="color: var(--text-main);">
+                                <img src="{% static 'main/images/github.ico' %}" alt="GitHub" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                        <h6 style="color: var(--accent-blue); margin: 0 0 10px 0; font-size: 14px;">{% trans "Стиль сайта" %}</h6>
+                        <p style="color: var(--text-main); margin: 0; line-height: 1.5;">{% trans "Написал код для главной страницы сайта" %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Алексей Цуканов -->
+            <div class="card team-member-card" style="background-color: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: var(--shadow-dark);">
+                <div style="display: flex; gap: 20px;">
+                    <img src="{% static 'main/images/Alex.jpg' %}" alt="Алексей Цуканов" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-blue);">
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="color: var(--text-main); margin: 0;">{% trans "Алексей Цуканов" %}</h3>
+                            <a href="https://t.me/Radarr_TMP" style="color: var(--text-main);">
+                                <img src="{% static 'main/images/telegram.ico' %}" alt="Telegram" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                        <h6 style="color: var(--accent-blue); margin: 0 0 10px 0; font-size: 14px;">{% trans "Продукт / Пиар Менеджер" %}</h6>
+                        <p style="color: var(--text-main); margin: 0; line-height: 1.5;">{% trans "Занимается продвижением. Работает в поддержке." %}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Виктория Аксенова -->
+            <div class="card team-member-card" style="background-color: var(--card-bg); padding: 20px; border-radius: 8px; box-shadow: var(--shadow-dark);">
+                <div style="display: flex; gap: 20px;">
+                    <img src="{% static 'main/images/Victoria.jpg' %}" alt="Виктория Аксенова" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-blue);">
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h3 style="color: var(--text-main); margin: 0;">{% trans "Виктория Аксенова" %}</h3>
+                            <a href="https://t.me/toria_aks" style="color: var(--text-main);">
+                                <img src="{% static 'main/images/telegram.ico' %}" alt="Telegram" style="width: 25px; height: 25px;">
+                            </a>
+                        </div>
+                        <h6 style="color: var(--accent-blue); margin: 0 0 10px 0; font-size: 14px;">{% trans "Дизайнер" %}</h6>
+                        <p style="color: var(--text-main); margin: 0; line-height: 1.5;">{% trans "Нарисовала шаблон, задала стиль сайта." %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'main/js/more_about_button.js' %}"></script>
+{% endblock %}

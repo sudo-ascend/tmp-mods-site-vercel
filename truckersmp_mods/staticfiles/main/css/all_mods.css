@@ -1,0 +1,43 @@
+
+.short-text {
+    display: none;
+}
+.show-more {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.show-more:hover {
+    text-decoration: none;
+}
+.image-zoom-container:hover {
+    transform: scale(1.03); /* Увеличение на 3% */
+    z-index: 1; /* Поднимаем над другими элементами */
+}
+
+.tariff-header {
+    transition: all 0.5s ease; /* Плавная анимация */
+    will-change: transform; /* Оптимизация анимации */
+}
+
+@media (max-width: 767.98px) {
+    .advantage-card {
+        height: 50px !important;
+        overflow: hidden;
+        width: 60%;
+    }
+    .advantage-card h4 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .advantage-card p {
+        display: none;
+    }
+    .advantage-card img {
+        width: 16px;
+        height: 16px;
+    }
+    .filter-block {
+    display: none;
+    }
+}

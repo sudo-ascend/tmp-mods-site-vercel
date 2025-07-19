@@ -1,0 +1,57 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+
+{% block title %}Главная{% endblock %}
+{% block stylesheet %}<link type="text/css" href="{%  static 'main/css/test_main.css'%}" rel="stylesheet" />{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="card">
+        <h2>Заголовок раздела 1</h2>
+        <p>Текст раздела с описанием. Здесь может быть любая информация о вашем проекте, услугах или продуктах.</p>
+        <button class="action-button">Кнопка действия</button>
+    </div>
+
+    <div class="card">
+        <h2>Заголовок раздела 2</h2>
+        <p>Еще один информационный блок. Можно добавить изображения, списки или другие элементы.</p>
+        <ul class="feature-list">
+            <li>Пункт списка 1</li>
+            <li>Пункт списка 2</li>
+            <li>Пункт списка 3</li>
+        </ul>
+    </div>
+
+    <!-- Секция комментариев -->
+    <div class="card comments-section">
+        <h2>Комментарии</h2>
+
+        <form class="comment-form">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Отправить</button>
+        </form>
+    </div>
+
+    <div class="container">
+        {% for comment in data %}
+            <div class="card">
+            <!-- Пример комментария -->
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">{{ comment.name }}</span>
+                        <span class="comment-date">{{ comment.time_create }}</span>
+                    </div>
+                    <p class="comment-text">{{ comment.content }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+/* ====================== */
+/* CIRCLE PAGINATION */
+/* ====================== */
+.circle-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.circle-pagination__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--card-bg);
+    border: 2px solid var(--border-dark);
+    color: var(--text-main);
+}
+
+.circle-pagination__item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-blue);
+}
+
+.circle-pagination__item--active {
+    background: white;
+    color: black;
+    border-color: var(--accent-blue);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(96, 119, 159, 0.3);
+}
+
+.circle-pagination__item--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.circle-pagination__dots {
+    display: flex;
+    align-items: flex-end;
+    color: var(--text-secondary);
+    padding-bottom: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .circle-pagination {
+        gap: 8px;
+    }
+    .circle-pagination__item {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+}

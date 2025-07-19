@@ -1,0 +1,390 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 21:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\main\all_mods.html:5 .\templates\main\base.html:67
+msgid "Все моды"
+msgstr "All mods"
+
+#: .\templates\main\all_mods.html:45 .\templates\main\all_news.html:46
+msgid "Фильтры"
+msgstr "Filters"
+
+#: .\templates\main\all_mods.html:48 .\templates\main\all_news.html:49
+msgid "Поиск"
+msgstr "Search"
+
+#: .\templates\main\all_mods.html:49 .\templates\main\all_news.html:50
+msgid "Введите запрос..."
+msgstr "Enter a query..."
+
+#: .\templates\main\all_mods.html:52 .\templates\main\all_news.html:53
+msgid "Сортировать по"
+msgstr "Sort by"
+
+#: .\templates\main\all_mods.html:54 .\templates\main\all_news.html:55
+#, fuzzy
+#| msgid "Новости"
+msgid "Популярности"
+msgstr "Popularity"
+
+#: .\templates\main\all_mods.html:55 .\templates\main\all_news.html:56
+msgid "Дате создания"
+msgstr "Date of creation"
+
+#: .\templates\main\all_mods.html:59
+msgid "Категория"
+msgstr "Category"
+
+#: .\templates\main\all_mods.html:61
+msgid "Все категории"
+msgstr "All categories"
+
+#: .\templates\main\all_mods.html:62
+msgid "Улучшенный геймплей"
+msgstr "Better gameplay"
+
+#: .\templates\main\all_mods.html:63
+msgid "Световые приборы"
+msgstr "Lighting devices"
+
+#: .\templates\main\all_mods.html:66 .\templates\main\all_news.html:59
+msgid "Применить"
+msgstr "Apply"
+
+#: .\templates\main\all_mods.html:68 .\templates\main\all_news.html:61
+msgid "Сбросить фильтры"
+msgstr "Reset filters"
+
+#: .\templates\main\all_news.html:5 .\templates\main\base.html:68
+msgid "Новости"
+msgstr "News"
+
+#: .\templates\main\base.html:32 .\templates\main\base.html:43
+msgid "ГЛАВНАЯ"
+msgstr "HOME"
+
+#: .\templates\main\base.html:33 .\templates\main\base.html:44
+msgid "ВСЕ МОДЫ"
+msgstr "ALL MODS"
+
+#: .\templates\main\base.html:34 .\templates\main\base.html:45
+msgid "НОВОСТИ"
+msgstr "NEWS"
+
+#: .\templates\main\base.html:35 .\templates\main\base.html:46
+msgid "ПЕРЕВОД"
+msgstr "RU"
+
+#: .\templates\main\base.html:59
+msgid ""
+"Надоело что админы могут следить за тобой, а ты за ними нет? Пора менять "
+"правила!"
+msgstr ""
+"Tired of admins being able to track you while you can't track them? Time to "
+"change the rules!"
+
+#: .\templates\main\base.html:64
+msgid "Навигация"
+msgstr "Navigation"
+
+#: .\templates\main\base.html:66
+msgid "Главная"
+msgstr "Home"
+
+#: .\templates\main\base.html:75
+msgid "Соцсети"
+msgstr "Social networks"
+
+#: .\templates\main\base.html:92
+msgid "Company. Все права защищены"
+msgstr "Website design. domain, 2025"
+
+#: .\templates\main\main.html:6
+msgid "main title"
+msgstr "main"
+
+#: .\templates\main\main.html:21
+msgid "Admin Radar"
+msgstr "Admin Radar"
+
+#: .\templates\main\main.html:30
+msgid "Оповещает о появление админа"
+msgstr "Notifies about admin appearance"
+
+#: .\templates\main\main.html:31
+msgid "Сообщение и звуковой сигнал"
+msgstr "Message and sound alert"
+
+#: .\templates\main\main.html:43
+msgid "Отключает урон трака"
+msgstr "Disables truck damage"
+
+#: .\templates\main\main.html:44
+#, fuzzy
+#| msgid "+ можно включить бесконечное топливо или зарядку"
+msgid "+ можно включить бесконечное топливо"
+msgstr "+ can enable infinite fuel or battery"
+
+#: .\templates\main\main.html:56
+msgid "Скрывает реальную скорость"
+msgstr "Hides actual speed"
+
+#: .\templates\main\main.html:57
+msgid "На спидометре 110, по факту 130"
+msgstr "Shows 110 on speedometer, actually 130"
+
+#: .\templates\main\main.html:66
+msgid "Trainer"
+msgstr "Trainer"
+
+#: .\templates\main\main.html:76
+msgid "Не является читом"
+msgstr "Not a cheat"
+
+#: .\templates\main\main.html:77
+msgid "Анализирует файлы игры, не изменяя их"
+msgstr "Analyzes game files without modifying them"
+
+#: .\templates\main\main.html:89
+#, python-format
+msgid "100%% невидим для ETS2MP"
+msgstr "100%% invisible to ETS2MP"
+
+#: .\templates\main\main.html:90
+msgid "В тракерсМП нет античита"
+msgstr "TruckersMP has no anti-cheat"
+
+#: .\templates\main\main.html:102
+msgid "Оптимизирован под рули"
+msgstr "Optimized for steering wheels"
+
+#: .\templates\main\main.html:103
+msgid "Кнопки не только на клавиатуре"
+msgstr "Buttons not only on keyboard"
+
+#: .\templates\main\main.html:111
+msgid "Узнать больше"
+msgstr "Learn more"
+
+#: .\templates\main\main.html:124
+msgid "Тарифы"
+msgstr "Pricing"
+
+#: .\templates\main\main.html:131
+msgid "Базовый"
+msgstr "Basic"
+
+#: .\templates\main\main.html:135 .\templates\main\main.html:156
+msgid "Радар"
+msgstr "Radar"
+
+#: .\templates\main\main.html:138 .\templates\main\main.html:157
+msgid "No damage"
+msgstr "No damage"
+
+#: .\templates\main\main.html:142 .\templates\main\main.html:162
+msgid "Подробнее"
+msgstr "Details"
+
+#: .\templates\main\main.html:143
+msgid "Скачать"
+msgstr "Download"
+
+#: .\templates\main\main.html:152
+msgid "SALE"
+msgstr "SALE"
+
+#: .\templates\main\main.html:153
+msgid "Pro"
+msgstr "Pro"
+
+#: .\templates\main\main.html:158
+msgid "Обход 110км/ч"
+msgstr "Bypass 110km/h limit"
+
+#: .\templates\main\main.html:159
+msgid "Стробоскопы"
+msgstr "Strobes"
+
+#: .\templates\main\main.html:163
+msgid "Купить"
+msgstr "Buy"
+
+#: .\templates\main\main.html:179
+msgid "ИСТОРИЯ ПРОЕКТА"
+msgstr "PROJECT HISTORY"
+
+#: .\templates\main\main.html:184
+msgid ""
+"Один раз, вспомнив про то как в 2000-ых в России были популярны такие радары-"
+"детекторы камер, в голову пришла идея, как такой же радар можно создать для "
+"тракерсМП."
+msgstr ""
+"Once, remembering how popular radar detectors were in Russia in the 2000s, "
+"the idea came to create a similar radar for TruckersMP."
+
+#: .\templates\main\main.html:186
+msgid "радар-детектор"
+msgstr "radar detector"
+
+#: .\templates\main\main.html:188
+msgid ""
+"Кто не знает, это прибор, который в реальном времени ищет камеры, "
+"установленные на дороге, и предостерегает водителя от получения "
+"потенцеального штрафа."
+msgstr ""
+"For those who don't know, it's a device that searches for cameras installed "
+"on the road in real time and warns the driver about potential fines."
+
+#: .\templates\main\main.html:191
+msgid ""
+"За пару дней набросал код, чтобы протестировать идею. И чудо, оно заработало "
+"- надо продолжать! Созвонились с другом, с которым катаемся в truckersMP - "
+"ему понравилось. Он присоединился к разработке. Таким образом командой из 2 "
+"человек, на протяжение 2 недель мы писали новый функционал и тестировали его "
+"в игре."
+msgstr ""
+"In a couple of days, I wrote some code to test the idea. And miraculously, "
+"it worked - we had to continue! Called a friend who plays TruckersMP with me "
+"- he liked it. He joined the development. So as a team of 2 people, for 2 "
+"weeks we wrote new features and tested them in the game."
+
+#: .\templates\main\main.html:194
+msgid "Выложили рекламный"
+msgstr "Posted an advertising"
+
+#: .\templates\main\main.html:194
+msgid "ролик"
+msgstr "video"
+
+#: .\templates\main\main.html:194
+msgid ""
+"на YouTube. Но он собрал мало просмотров. Поэтому уже командой из 3 человек "
+"начали разрабатывать этот сайт для продвижения."
+msgstr ""
+"on YouTube. But it got few views. So as a team of 3 people, we started "
+"developing this website for promotion."
+
+#: .\templates\main\main.html:197
+msgid "Подробно узнать как он работает вы можете в"
+msgstr "You can learn more about how it works in our"
+
+#: .\templates\main\main.html:197
+msgid "блоге"
+msgstr "blog"
+
+#: .\templates\main\main.html:200
+msgid ""
+"Разрабатывать мод для любимой игры - это настоящее удовольствие! Очень "
+"хочется поделиться им с другими игроками, Но так как обслуживать сайт и "
+"размещать его на сервере дорого, просим вас поддержать нас исключительно "
+"символической суммой. Так вы внесете свой вклад в развитие проекта."
+msgstr ""
+"Developing a mod for your favorite game is a real pleasure! We really want "
+"to share it with other players, but since maintaining the website and "
+"hosting it on a server is expensive, we ask you to support us with just a "
+"symbolic amount. This way you'll contribute to the project's development."
+
+#: .\templates\main\main.html:211
+msgid "Добавить комментарий"
+msgstr "Add comment"
+
+#: .\templates\main\main.html:215
+msgid "Имя"
+msgstr "Name"
+
+#: .\templates\main\main.html:221
+msgid "Комментарий"
+msgstr "Comment"
+
+#: .\templates\main\main.html:225
+msgid "Опубликовать"
+msgstr "Publish"
+
+#: .\templates\main\main.html:254
+msgid "Наша команда"
+msgstr "Our team"
+
+#: .\templates\main\main.html:265
+msgid "Грачев Илья"
+msgstr "Ilya Grachev"
+
+#: .\templates\main\main.html:270
+msgid "Админ / Разработчик"
+msgstr "Admin / Developer"
+
+#: .\templates\main\main.html:271
+msgid "Возглавляет команду разработчиков. Пишет скрипт для сайта и программы"
+msgstr ""
+"Leads the development team. Writes scripts for the website and programs"
+
+#: .\templates\main\main.html:282
+msgid "Федор Сапронов"
+msgstr "Fedor Sapronov"
+
+#: .\templates\main\main.html:287
+msgid "Стиль сайта"
+msgstr "Website style"
+
+#: .\templates\main\main.html:288
+msgid "Написал код для главной страницы сайта"
+msgstr "Wrote code for the main page"
+
+#: .\templates\main\main.html:299
+msgid "Алексей Цуканов"
+msgstr "Alexey Tsukanov"
+
+#: .\templates\main\main.html:304
+msgid "Продукт / Пиар Менеджер"
+msgstr "Product / PR Manager"
+
+#: .\templates\main\main.html:305
+msgid "Занимается продвижением. Работает в поддержке."
+msgstr "Handles promotion. Works in support."
+
+#: .\templates\main\main.html:316
+msgid "Виктория Аксенова"
+msgstr "Victoria Aksenova"
+
+#: .\templates\main\main.html:321
+msgid "Дизайнер"
+msgstr "Designer"
+
+#: .\templates\main\main.html:322
+msgid "Нарисовала шаблон, задала стиль сайта."
+msgstr "Created the template, defined the website style."
+
+#, fuzzy
+#~| msgid "Развернуть"
+#~ msgid "развернуть"
+#~ msgstr "Expand"
+
+#, fuzzy
+#~| msgid "Свернуть"
+#~ msgid "свернуть"
+#~ msgstr "Collapse"
+
+#~ msgid "Свернуть"
+#~ msgstr "Collapse"
+
+#~ msgid "Развернуть"
+#~ msgstr "Expand"

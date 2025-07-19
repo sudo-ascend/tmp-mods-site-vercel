@@ -1,0 +1,532 @@
+/* ====================== */
+/* MEDIA QUERIES */
+/* ====================== */
+@media (max-width: 1024px) {
+    .tariff-card-combined {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+
+    .tariff-header {
+        padding: 30px;
+    }
+
+    .btn-outline, .btn-primary {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* ====================== */
+/* THEME VARIABLES */
+/* ====================== */
+:root {
+    --bg-dark: #121212;
+    --bg-darker: #090909;
+    --card-bg: #242424;
+    --text-main: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --border-dark: #333;
+    --accent-blue: #60779f;
+    --accent-red: #d14334;
+    --shadow-dark: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --bg-light: #60779f;
+}
+
+/* ====================== */
+/* BASE STYLES */
+/* ====================== */
+
+.container {
+    max-width: 1200px;
+}
+
+/* ====================== */
+/* SECTION STYLES */
+/* ====================== */
+section {
+    padding: 50px 0;
+}
+
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.hero-text {
+    color: var(--text-secondary);
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    max-width: 800px;
+}
+
+.video-block {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--border-dark);
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+/* ====================== */
+/* BUTTON STYLES */
+/* ====================== */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.btn-outline {
+    background: black;
+    color: var(--text-main);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+}
+
+.text-secondary {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.text-center {
+    font-size: 36px;
+    color: black;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: var(--border-dark);
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: var(--border-dark);
+}
+
+
+.funpay:hover {
+    background-color: white;
+}
+
+.btn-danger {
+    background-color: var(--accent-red);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #ba3a2d;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ====================== */
+/* PROJECT SECTION STYLES */
+/* ====================== */
+.project-section {
+    background-color: var(--bg-dark);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    text-align: left;
+    color: white;
+}
+
+
+.project-description {
+    color: var(--text-secondary);
+}
+
+.more-btn {
+    background-color: #2a61a2;
+    color: white;
+    border: 0px;
+    padding: 15px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #2c6ec4;
+}
+
+/* Advantages list styles */
+.advantages-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.advantages-list li {
+    padding: 12px 75px;
+}
+
+.explanations {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.explanation-item {
+    flex: 1;
+    margin: 10px 0;
+    margin-left: 28px;
+    color: var(--text-secondary);
+}
+
+/* ====================== */
+/* TARIFFS SECTION STYLES */
+/* ====================== */
+
+.services {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: black;
+    padding: 50px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.sale-label {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--accent-red);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.tariff-plans {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tariff-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: var(--shadow-dark);
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: black;
+}
+
+/* ====================== */
+/* YOUTUBE IFRAME STYLES */
+/* ====================== */
+.youtube-iframe {
+    border-radius: 40px;
+    box-shadow:0 0 10px rgba(75, 0, 130, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.youtube-iframe:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(75, 0, 130, 0.4);
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ====================== */
+/* BACKGROUND IMAGE STYLES */
+/* ====================== */
+.bg-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 1;
+}
+
+.project-section.with-bg-image {
+    position: relative;
+    background-color: var(--bg-dark);
+    overflow: hidden;
+    height:850px;
+}
+
+.project-section.with-bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent, 35%, black), url('https://pic.rutube.ru/video/2025-02-04/9f/1b/9f1b105d9888db42978ece84ccd67cca.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.project-section.with-bg-image .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ====================== */
+/* TARIFF CARD STYLES */
+/* ====================== */
+.tariff-card-combined {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    background-color: var(--card-bg);
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tariff-card-combined:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.tariff-header {
+    background-color: black;
+    padding: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.tariff-body {
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Sale label styles */
+.sale-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+/* Комментарии */
+.comments-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.comment-form {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-dark);
+}
+
+.comment-item {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-dark);
+    transition: transform 0.2s ease;
+}
+
+.comment-item:hover {
+    transform: translateY(-3px);
+}
+
+.comment-item .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.comment-item .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-blue);
+}
+
+.comment-item .user-name {
+    margin: 0;
+    color: var(--text-main);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.comment-item .comment-date {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.comment-item .comment-text {
+    color: var(--text-main);
+    margin: 0;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+/* Форма комментария */
+.comment-form label {
+    display: block;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border-dark);
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.comment-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.comment-form .btn {
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+/* Анимация при наведении */
+.card-feature:hover {
+    transform: translateY(-5px); /* Поднимает карточку вверх */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Тень для эффекта глубины */
+    background-color: rgba(255, 255, 255, 0.25) !important; /* Увеличивает прозрачность фона */
+    border-color: rgba(255, 255, 255, 0.5) !important; /* Делает границу ярче */
+}
+
+#history-content {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+#history-content.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#history-content.expanded {
+    max-height: 2000px; /* Достаточно большое значение для контента */
+    opacity: 1;
+}
+
+/* Новые стили для заголовка и кнопки */
+.history-header {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+
+}
+
+.history-header h1 {
+    margin: 0;
+    display: inline;
+}
+
+.toggle-history-btn {
+    white-space: nowrap;
+    display: inline;
+    margin-bottom: 15px
+}
+
+.advantage-card {
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+        height: 150px;
+    }
+
+@media (max-width: 767px) {
+    .advantage-card {
+        height: 50px !important;
+        overflow: hidden;
+        width: 60%;
+    }
+    .advantage-card h4 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .advantage-card p {
+        display: none;
+    }
+    .advantage-card img {
+        width: 16px;
+        height: 16px;
+    }
+}

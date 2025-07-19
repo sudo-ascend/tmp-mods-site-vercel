@@ -1,0 +1,72 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Новости" %}{% endblock %}
+{% block stylesheet %}
+<link type="text/css" href="{% static 'main/css/main.css'%}" rel="stylesheet" />
+<link type="text/css" href="{% static 'main/css/base.css'%}" rel="stylesheet" />
+<!--<link type="text/css" href="{% static 'main/css/all_news.css'%}" rel="stylesheet" />-->
+<link type="text/css" href="{% static 'main/css/all_mods.css'%}" rel="stylesheet" />
+<link type="text/css" href="{% static 'main/css/paginator.css'%}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+<br><br><br>
+<div class="container" style="max-width:1050px">
+    <div class="row">
+        <div class="col-md-8 order-md-1">
+            {% for new in page_obj %}
+            <div class="tariff-plans">
+                <div class="tariff-card-combined" style="max-width:800px;">
+                    <div class="tariff-header image-zoom-container"
+                         style="background-image: linear-gradient(to bottom, transparent, 65%, black), url('{{ new.image.url }}');
+                                background-size: cover;
+                                background-position: center;
+                                transition: transform 0.5s ease;
+                                overflow: hidden;">
+                        <h2>{{ new.title }}</h2>
+                    </div>
+                    <div class="tariff-body">
+                        <p class="hero-text full-text" style="text-align: left; display: none;">{{ new.content }}</p>
+                        <p class="hero-text short-text" style="text-align: left;">{{ new.content|truncatechars:200 }}</p>
+                        {% if new.content|length > 200 %}
+                        <span class="show-more text-black" onclick="toggleText(this)">read more</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <br>
+            {% endfor %}
+        </div>
+
+        <!-- Блок фильтров (4 колонки) -->
+        <div class="col-md-4 order-md-2">
+            <div class="filter-block" style="background: #f8f9fa; padding: 20px; border-radius: 5px; position: sticky; top: 70px;">
+                <h4 class="text-black">{% trans "Фильтры" %}</h4>
+                <form method="get" action="">
+                    <div class="mb-3">
+                        <label class="form-label text-black">{% trans "Поиск" %}</label>
+                        <input type="text" name="search" class="form-control" placeholder="{% trans 'Введите запрос...' %}" value="{{ search_query }}">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-black">{% trans "Сортировать по" %}</label>
+                        <select name="sort_by" class="form-select">
+                            <option value="popularity" {% if selected_sort == 'popularity' %}selected{% endif %}>{% trans "Популярности" %}</option>
+                            <option value="date" {% if selected_sort == 'date' %}selected{% endif %}>{% trans "Дате создания" %}</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">{% trans "Применить" %}</button>
+                    {% if selected_sort or selected_category or search_query %}
+                        <a href="?" class="btn btn-outline-secondary w-100 mt-2">{% trans "Сбросить фильтры" %}</a>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+    {% include 'main/paginator.html' %}
+</div>
+{% block scripts %}
+<script src="{% static 'main/js/more_button.js' %}"></script>
+{% endblock %}
+{% endblock %}

@@ -27,12 +27,6 @@ SECRET_KEY = 'django-insecure-v7ihiaaljur7ezwb_-#*2+qbmo9d#_6fe#^k&75qpzu1em@a5m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'tmp-mods-site-vercel.vercel.app',
-    '.vercel.app',
-    '.now.sh',
-    '127.0.0.1'
-]
 
 # INTERNAL_IPS = ["127.0.0.1"]
 
@@ -51,10 +45,12 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'main.apps.MainConfig',
     'django_cleanup.apps.CleanupConfig',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -168,10 +164,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Для статических файлов
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Для collectstatic
+STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# CORS settings
+
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['*']
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

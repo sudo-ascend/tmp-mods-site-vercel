@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-v7ihiaaljur7ezwb_-#*2+qbmo9d#_6fe#^k&75qpzu1em@a5m
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    'tmp-mods-site-vercel.vercel.app',
     '.vercel.app',
     '.now.sh',
     '127.0.0.1'

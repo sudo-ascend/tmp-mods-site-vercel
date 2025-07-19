@@ -9,5 +9,11 @@
             "src": "/(.*)",
             "dest": "truckersmp_mods/wsgi.py"
         }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
     ]
 }
